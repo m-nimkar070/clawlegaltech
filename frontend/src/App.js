@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import AdminDashboard from "./Pages/AdminDashboard";
 import Login from "./Pages/Login";
+import AdminDashboard from './Pages/Dashboard';
 import Dashboard from "./Pages/Dashboard";
-import Register from "./pages/Register";
+import Register from './Pages/Register';
 
 const App = () => {
   return (
