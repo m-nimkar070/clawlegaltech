@@ -43,7 +43,8 @@ const Login = () => {
       const response = await login(email, password);
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("role", response.data.role); // Store role
-      if (response.data.role === "admin") {
+      console.log("Role after login:", response.data.role === "hr"); // Debugging
+      if (response.data.role === "hr") {
         navigate("/admin"); // Redirect to admin dashboard
       } else {
         navigate("/dashboard"); // Redirect to user dashboard

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../styles/AdminDashboard.css';
 import { getAllResignations, concludeResignation } from "../services/api";
 
 const AdminDashboard = () => {
@@ -21,7 +22,7 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div>
+    <div className="admin-dashboard">
       <h1>Admin Dashboard</h1>
       <table>
         <thead>
@@ -42,6 +43,8 @@ const AdminDashboard = () => {
               <td>{resignation.status}</td>
               <td>
                 <button
+                  className="approve"
+                  disabled={resignation.status === "approved"}
                   onClick={() =>
                     handleApproveReject(resignation._id, true, resignation.lwd)
                   }
@@ -49,6 +52,8 @@ const AdminDashboard = () => {
                   Approve
                 </button>
                 <button
+                  className="reject"
+                  disabled={resignation.status === "rejected"}
                   onClick={() =>
                     handleApproveReject(resignation._id, false, resignation.lwd)
                   }

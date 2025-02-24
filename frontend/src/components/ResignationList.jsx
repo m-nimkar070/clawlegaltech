@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllResignations, getUserResignations } from "../services/api";
+import { getUserResignations } from "../services/api";
 
 const ResignationList = ({ token }) => {
   const [resignations, setResignations] = useState([]);

@@ -2,13 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Login from "./Pages/Login";
-import AdminDashboard from "./Pages/Dashboard";
+import AdminDashboard from "./Pages/AdminDashboard";
 import Dashboard from "./Pages/Dashboard";
 import Register from "./Pages/Register";
 import './styles/App.css'
 
 const App = () => {
   const role = localStorage.getItem("role");
+  console.log("role" , role)
   return (
     <Router>
       <Navbar />
