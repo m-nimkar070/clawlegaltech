@@ -42,7 +42,12 @@ const Login = () => {
     try {
       const response = await login(email, password);
       localStorage.setItem("token", response.data.token);
-      navigate("/dashboard");
+      localStorage.setItem("role", response.data.role); // Store role
+      if (response.data.role === "admin") {
+        navigate("/admin"); // Redirect to admin dashboard
+      } else {
+        navigate("/dashboard"); // Redirect to user dashboard
+      }
     } catch (error) {
       alert("Login failed");
     }
