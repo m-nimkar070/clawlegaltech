@@ -19,8 +19,8 @@ export const login = (email, password) => {
 };
 
 // Resignation
-export const submitResignation = (lwd, reason, token) => {
-  return axios.post(
+export const submitResignation = async(lwd, reason, token) => {
+  return await axios.post(
     `${API_URL}/user/resign`,
     { lwd, reason },
     { headers: { Authorization: `Bearer ${token}` } }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { submitResignation } from "../services/api";
+import "../styles/ResignationForm.css";
 
 const ResignationForm = ({ token }) => {
   const [lwd, setLwd] = useState("");
@@ -18,13 +19,17 @@ const ResignationForm = ({ token }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="resignation-form" onSubmit={handleSubmit}>
+      <div style={{display:"flex" , gap:'10px'}}>
+      <label htmlFor="date">Last working Day: </label>
       <input
+        id="date"
         type="date"
         value={lwd}
         onChange={(e) => setLwd(e.target.value)}
         required
       />
+      </div>
       <textarea
         value={reason}
         onChange={(e) => setReason(e.target.value)}
