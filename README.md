@@ -65,8 +65,7 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/resignation_system
 JWT_SECRET=your_jwt_secret
 CALENDARIFIC_API_KEY=your_calendarific_api_key
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_email_password
+GMAIL_PWD=your_email_password
 ```
 
 #### Start the backend server:
@@ -109,7 +108,7 @@ http://localhost:3000
   "username": "string",
   "email": "string",
   "password": "string",
-  "role": "employee" | "admin",
+  "role": "employee" | "hr",
   "country": "string"
 }
 ```
@@ -209,8 +208,7 @@ http://localhost:3000
 | `MONGO_URI`             | MongoDB connection string                   |
 | `JWT_SECRET`            | Secret key for JWT authentication           |
 | `CALENDARIFIC_API_KEY`  | API key for Calendarific                     |
-| `EMAIL_USER`            | Email address for Nodemailer                 |
-| `EMAIL_PASS`            | Email password for Nodemailer                |
+| `GMAIL_PASS`            | Email password for Nodemailer                |
 
 ---
 
