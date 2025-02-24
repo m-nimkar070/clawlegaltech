@@ -82,7 +82,7 @@ const Register = () => {
       />
       <select style={styles.select} value={role} onChange={(e) => setRole(e.target.value)}>
         <option value="employee">Employee</option>
-        <option value="admin">Admin</option>
+        <option value="hr">Admin</option>
       </select>
       <input
         style={styles.input}
