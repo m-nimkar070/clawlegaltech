@@ -2,6 +2,8 @@
 
 The Resignation Management System is a full-stack web application built with Node.js/Express.js for the backend and React.js for the frontend. It allows employees to submit resignation requests, HR admins to manage these requests, and employees to complete exit questionnaires.
 
+## Deployed Link:
+https://clawlegaltech.vercel.app/
 ## Features
 
 ### User Authentication:
