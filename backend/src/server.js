@@ -5,7 +5,7 @@ const apiRoutes = require("./routes/index");
 const cors = require('cors');
 
 dotenv.config();
-
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
 const app = express();
 app.use(express.json());
 app.use(cors());
