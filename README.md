@@ -61,7 +61,7 @@ npm install
 
 #### Create a `.env` file in the backend folder and add the following environment variables:
 ```env
-PORT=5000
+PORT=8080
 MONGO_URI=mongodb://localhost:27017/resignation_system
 JWT_SECRET=your_jwt_secret
 CALENDARIFIC_API_KEY=your_calendarific_api_key
