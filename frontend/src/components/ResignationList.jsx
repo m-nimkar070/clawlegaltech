@@ -16,18 +16,6 @@ const ResignationList = ({ token }) => {
     fetchResignations();
   }, [token]);
 
-  useEffect(() => {
-    const fetchResignations = async () => {
-      try {
-        const response = await getAllResignations(token);
-        setResignations(response.data.data);
-      } catch (error) {
-        console.error("Error fetching resignations:", error);
-      }
-    };
-    fetchResignations();
-  }, [token]);
-
   return (
     <div>
       <h2>Your Resignations</h2>
