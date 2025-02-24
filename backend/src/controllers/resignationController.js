@@ -41,7 +41,6 @@ exports.getResignations = async (req, res) => {
       "employeeId",
       "username"
     );
-    console.log("res", resignations);
     res.status(200).json({ data: resignations });
   } catch (err) {
     res.status(500).json({ error: err.message });

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://clawlegaltech.onrender.com/api"; // Replace with your backend URL
+const API_URL = "https://clawlegaltech.onrender.com/api"; 
 
 // Registration
 export const register = (username, email, password, role, country) => {

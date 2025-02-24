@@ -9,7 +9,6 @@ import './styles/App.css'
 
 const App = () => {
   const role = localStorage.getItem("role");
-  console.log("role" , role)
   return (
     <Router>
       <Navbar />
